@@ -38,6 +38,12 @@ public class Drink {
 		return price;
 	}
 	
+	/*
+	public int getStock() {
+		return stock;
+	}
+	*/
+	
 	public void setStock(int stock) {
 		this.stock = stock;
 	}
@@ -50,11 +56,14 @@ public class Drink {
 		return true;
 	}
 	
+	public void plusStock() {
+		stock++;
+	}
+	
+	
 	@Override
 	public String toString() {
 		return String.format("%s. %d원 ---> 재고 : %d개", pName, price, stock);
 	}
-
-	
 
 }
